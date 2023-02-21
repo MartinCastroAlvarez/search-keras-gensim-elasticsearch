@@ -1,0 +1,5 @@
+cluster.name: my_cluster
+node.name: my_node
+network.host: 0.0.0.0
+discovery.type: single-node
+xpack.ml.enabled: true
