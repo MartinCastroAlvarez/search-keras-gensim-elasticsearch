@@ -238,7 +238,7 @@ class Search:
             data={
                 self.TITLE: title,
                 self.TEXT: text,
-                self.EMBEDDINGS: embedding.get_embedding(summary.get_summary(text)),
+                self.EMBEDDINGS: embedding.get_embedding(summary.get_summary(text)).tolist(),
                 # self.EMBEDDINGS: [
                 #     embedding.tolist()
                 #     for embedding in embedding.get_embeddings(summary.get_summary(text))
